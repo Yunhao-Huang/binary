@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Binary & Floating-Point Visualizer</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header>
+    <h1>Binary & Floating-Point Visualizer</h1>
+    <p class="subtitle">
+      An interactive demo showing how numbers are represented in binary.
+    </p>
+  </header>
+
+  <main>
+    <!-- Integer to Binary -->
+    <section>
+      <h2>Decimal to N-bit Binary</h2>
+      <p>
+        Convert a decimal integer into its N-bit binary representation.
+      </p>
+
+      <div class="input-group">
+        <input type="number" id="intInput" placeholder="Decimal number" />
+        <input type="number" id="bitInput" placeholder="Bits (e.g. 8)" />
+        <button onclick="convertInteger()">Convert</button>
+      </div>
+
+      <pre id="intResult" class="result"></pre>
+    </section>
+
+    <!-- Floating Point -->
+    <section>
+      <h2>Simplified Floating-Point Representation</h2>
+      <p>
+        This demo shows a simplified floating-point format using
+        sign, exponent (biased), and mantissa.
+      </p>
+
+      <div class="input-group">
+        <input type="number" step="any" id="floatInput" placeholder="Decimal real number" />
+        <button onclick="convertFloat()">Convert</button>
+      </div>
+
+      <pre id="floatResult" class="result"></pre>
+    </section>
+
+    <!-- Explanation -->
+    <section>
+      <h2>What This Demonstrates</h2>
+      <ul>
+        <li>Binary number systems</li>
+        <li>Fixed-width integer representation</li>
+        <li>Floating-point encoding concepts</li>
+        <li>Overflow and precision limits</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>
+      Created by Yunhao Huang ·
+      <a href="https://github.com/YOUR_GITHUB_USERNAME" target="_blank">GitHub</a>
+    </p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
